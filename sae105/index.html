@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-SPACE - Voyage dans le Système Solaire</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <!-- ZONE IMAGE -->
+      <div class="zone-image">
+        <img class="image-cliquable" alt="" />
+      </div>
+
+      <!-- ZONE TEXTE -->
+      <div class="zone-texte">
+        <p class="texte"></p>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <form class="formulaire" id="formulaire">
+        <h3>Suggérer une planète</h3>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" maxlength="50" placeholder="Entrer votre nom" required />
+        <small style="color: #aaa;">Max 50 caractères</small>
+
+        <label for="url">URL de l'image :</label>
+        <input type="url" id="url" maxlength="100" placeholder="https://..." required />
+        <small style="color: #aaa;">Max 100 caractères</small>
+        <small style="color: #aaa;">Format : https://exemple.com/image.jpg</small>
+
+        <label for="desc">Description :</label>
+        <textarea id="desc" rows="3" maxlength="500" placeholder="Description" required></textarea>
+        <small style="color: #aaa;">Max 500 caractères</small><br>
+
+        <button type="button" id="previsualiser">Prévisualiser</button>
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <!-- MENTIONS LÉGALES -->
+      <div class="mentions-legales" id="mentions-legales">
+        <h3>Mentions légales</h3>
+
+        <p><strong>Projet pédagogique</strong></p>
+        <p>Ce site a été réalisé dans le cadre de la SAÉ 1.05 du BUT MMI.</p>
+
+        <p><strong>Éditeur du site</strong></p>
+        <p>
+          Émeric — Étudiant en BUT MMI<br />
+          Champs-sur-Marne
+        </p>
+
+        <p><strong>Hébergement</strong></p>
+        <p>Site hébergé localement / à des fins pédagogiques.</p>
+
+        <p><strong>Données personnelles</strong></p>
+        <p>
+          Les informations saisies dans le formulaire ne sont ni stockées, ni
+          transmises, ni exploitées. Elles servent uniquement à une simulation
+          pédagogique.
+        </p>a
+
+        <p><strong>Crédits images</strong></p>
+        <ul>
+          <li>
+            Système solaire:
+            https://commons.wikimedia.org/wiki/File:Solar_System_Model_Prototype.gif
+          </li>
+          <li>
+            Soleil:
+            https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg
+          </li>
+          <li>
+            Mercure:
+            https://commons.wikimedia.org/wiki/File:Mercury_Globe-MESSENGER_mosaic_centered_at_0degN-0degE.jpg
+          </li>
+          <li>
+            Vénus: https://commons.wikimedia.org/wiki/File:Venus_globe.jpg
+          </li>
+          <li>
+            Terre:
+            https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg
+          </li>
+          <li>
+            Mars:
+            https://commons.wikimedia.org/wiki/File:OSIRIS_Mars_true_color.jpg
+          </li>
+          <li>Jupiter: https://commons.wikimedia.org/wiki/File:Jupiter.jpg</li>
+          <li>
+            Saturne:
+            https://commons.wikimedia.org/wiki/File:Saturn_during_Equinox.jpg
+          </li>
+          <li>Uranus: https://commons.wikimedia.org/wiki/File:Uranus2.jpg</li>
+          <li>
+            Neptune: https://commons.wikimedia.org/wiki/File:Neptune_Full.jpg
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
